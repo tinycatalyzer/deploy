@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-gcloud compute resource-policies create snapshot-schedule wbstack-nightly-east-to-west-2d-1 \
+gcloud compute resource-policies create snapshot-schedule catalyzer-nightly-east-to-west-2d-1 \
 --project=catalyzer-wikistack --region=us-east1 \
 --max-retention-days=2 \
 --on-source-disk-delete=keep-auto-snapshots \
