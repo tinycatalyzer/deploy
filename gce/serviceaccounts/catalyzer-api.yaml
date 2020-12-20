@@ -1,5 +1,5 @@
 imports:
-  - path: ./samples2 @ 576f59f/deploymentmanager-samples/community/cloud-foundation/templates/iam_member/iam_member.py
+  - path: ./iam_member.py
     name: iam_member.py
 
 resources:
