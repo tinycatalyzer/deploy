@@ -8,4 +8,4 @@ releases:
   chart: jetstack/cert-manager
   version: v0.13.0
   values:
-  - "values.yaml"
+  - "./values.yaml"
