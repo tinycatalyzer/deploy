@@ -1,8 +1,8 @@
 releases:
 - name: clusterissuers
   namespace: cert-manager
-  chart: ./../../../charts/catalyzer-wikistack-clusterissuers
-  values: 
+  chart: ./../../../charts/wbstack-clusterissuers
+  values:
   - "values.yaml.gotmpl"
 
 environments:
