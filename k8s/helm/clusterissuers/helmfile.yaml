@@ -2,9 +2,9 @@ releases:
 - name: clusterissuers
   namespace: cert-manager
   chart: ./../../../charts/catalyzer-wikistack-clusterissuers
-  values:
+  values: {{.Files.Get "./values.yaml.gotmpl" | b64enc}}
 #  - "./values.yaml.gotmpl"
-  {{.Files.Get "./values.yaml.gotmpl" | b64enc}}
+
 
 environments:
   default:
