@@ -3,7 +3,7 @@ releases:
   namespace: cert-manager
   chart: ./../../../charts/catalyzer-wikistack-clusterissuers
   values:
-  - "values.yaml.gotmpl"
+  - "./values.yaml.gotmpl"
 
 environments:
   default:
