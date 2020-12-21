@@ -4,7 +4,7 @@ releases:
   chart: ./../../../charts/catalyzer-wikistack-clusterissuers
   values:
 #  - "./values.yaml.gotmpl"
-  {{.Files.Get "./values.yaml.gotmpl" | b64enc}
+  {{.Files.Get "./values.yaml.gotmpl" | b64enc}}
 
 environments:
   default:
