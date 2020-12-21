@@ -3,7 +3,6 @@ releases:
   namespace: cert-manager
   chart: ./../../../charts/catalyzer-wikistack-clusterissuers
   values: 
-#  - {{.Files.Get "./values.yaml.gotmpl" | b64enc}}
   - "./values.yaml.gotmpl"
 
 environments:
