@@ -10,18 +10,17 @@ spec:
   issuerRef:
     name: letsencrypt-prod
     kind: ClusterIssuer
-  commonName: '*.wiki.catalyzer.com'
+  commonName: '*.wiki.catalyzer.us'
   dnsNames:
 #  - '*.catalyzer.com'
-  - '*.wiki.catalyzer.com'
-  - '*.wikibase.catalyzer.com'
-  - '*.test.catalyzer.com'
+  - 'wiki.catalyzer.us'
+  - '*.wiki.catalyzer.us'
+  - '*.wikibase.catalyzer.us'
   acme:
     config:
     - dns01:
         provider: clouddns
       domains:
-      - '*.catalyzer.com'
-      - '*.wiki.catalyzer.com'
-      - '*.wikibase.catalyzer.com'
-      - '*.test.catalyzer.com'
+      - 'wiki.catalyzer.us'
+      - '*.wiki.catalyzer.us'
+      - '*.wikibase.catalyzer.us'
