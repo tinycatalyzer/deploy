@@ -1,51 +1,24 @@
 apiVersion: cert-manager.io/v1alpha2
 kind: Certificate
 metadata:
-  name: wbstack-com-tls-staging
+  name: catalyzer-com-tls-staging
   namespace: default
   labels:
     app.kubernetes.io/managed-by: ManualGit
 spec:
-  secretName: wbstack-com-tls-staging
+  secretName: catalyzer-com-tls-staging
   issuerRef:
     name: letsencrypt-staging
     kind: ClusterIssuer
-  commonName: '*.wbstack.com'
+  commonName: '*.wiki.catalyzer.us'
   dnsNames:
-    - wbstack.com
-    - '*.wbstack.com'
+    - 'wiki.catalyzer.us'
+    - '*.wiki.catalyzer.us'
   acme:
     config:
       - dns01:
           provider: clouddns
         domains:
-          - wbstack.com
-          - '*.wbstack.com'
----
-apiVersion: cert-manager.io/v1alpha2
-kind: Certificate
-metadata:
-  name: opencura-com-tls-staging
-  namespace: default
-  labels:
-    app.kubernetes.io/managed-by: ManualGit
-spec:
-  secretName: opencura-com-tls-staging
-  issuerRef:
-    name: letsencrypt-staging
-    kind: ClusterIssuer
-  commonName: '*.opencura.com'
-  dnsNames:
-    - '*.opencura.com'
-    - '*.wiki.opencura.com'
-    - '*.wikibase.opencura.com'
-    - '*.test.opencura.com'
-  acme:
-    config:
-      - dns01:
-          provider: clouddns
-        domains:
-          - '*.opencura.com'
-          - '*.wiki.opencura.com'
-          - '*.wikibase.opencura.com'
-          - '*.test.opencura.com'
+          - wiki.catalyzer.us
+          - '*.wiki.catalyzer.us'
+          - '*.wikibase.catalyzer.us'
