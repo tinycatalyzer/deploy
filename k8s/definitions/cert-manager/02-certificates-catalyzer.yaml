@@ -1,4 +1,4 @@
-apiVersion: cert-manager.io/v1
+apiVersion: cert-manager.io/v1alpha2
 kind: Certificate
 metadata:
   name: catalyzer-com-tls
@@ -10,17 +10,18 @@ spec:
   issuerRef:
     name: letsencrypt-prod
     kind: ClusterIssuer
-  commonName: '*.wiki.catalyzer.us'
+  commonName: '*.catalyzer.us'
   dnsNames:
-#  - '*.catalyzer.com'
-  - 'wiki.catalyzer.us'
-  - '*.wiki.catalyzer.us'
-  - '*.wikibase.catalyzer.us'
+    - catalyzer.us
+    - '*.catalyzer.us'
+    - 'wiki.catalyzer.us'
+    - 'wikibase.catalyzer.us'
   acme:
     config:
-    - dns01:
-        provider: clouddns
-      domains:
-      - 'wiki.catalyzer.us'
-      - '*.wiki.catalyzer.us'
-      - '*.wikibase.catalyzer.us'
+      - dns01:
+          provider: clouddns
+        domains:
+          - catalyzer.us
+          - '*.catalyzer.us'
+          - 'wiki.catalyzer.us'
+          - 'wikibase.catalyzer.us'
