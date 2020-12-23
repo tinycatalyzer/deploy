@@ -1,6 +1,6 @@
 controller:
   service:
-    loadBalancerIP: 34.73.9.97
+    loadBalancerIP: 34.74.91.225
     externalTrafficPolicy: Local
   resources:
     #          limits:
