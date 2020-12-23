@@ -12,18 +12,16 @@ spec:
     kind: ClusterIssuer
   commonName: '*.catalyzer.us'
   dnsNames:
-    - 'wiki.catalyzer.us'
+    - catalyzer.us
     - '*.catalyzer.us'
-    - 'catalyzer.us
-    - '*.wiki.catalyzer.us'
-    - '*.wikibase.catalyzer.us'
+    - 'wiki.catalyzer.us'
+    - 'wikibase.catalyzer.us'
   acme:
     config:
       - dns01:
           provider: clouddns
         domains:
-          - wiki.catalyzer.us
+          - catalyzer.us
           - '*.catalyzer.us'
-          - 'catalyzer.us
-          - '*.wiki.catalyzer.us'
-          - '*.wikibase.catalyzer.us'
+          - 'wiki.catalyzer.us'
+          - 'wikibase.catalyzer.us'
