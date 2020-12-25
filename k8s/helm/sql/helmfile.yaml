@@ -1,3 +1,10 @@
+environments: 
+  default: 
+    values: 
+    - "values.yaml"
+
+---
+
 repositories:
   - name: bitnami
     url: https://charts.bitnami.com/bitnami
@@ -11,8 +18,3 @@ releases:
 #  version: 7.3.16
   values:
   - "values.yaml.gotmpl"
-  
-environments: 
-  sql: 
-    values: 
-      - "values.yaml"
