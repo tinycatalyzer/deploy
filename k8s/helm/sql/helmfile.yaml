@@ -13,5 +13,6 @@ releases:
   - "values.yaml.gotmpl"
   
 environments: 
+  sql: 
     values: 
       - "values.yaml"
