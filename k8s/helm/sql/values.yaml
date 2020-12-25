@@ -1,0 +1,4 @@
+services:
+  sql:
+    rootPassword: 'princess27'
+    replicationPassword: 'rootpassword'
