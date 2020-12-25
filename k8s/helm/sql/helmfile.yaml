@@ -11,4 +11,4 @@ releases:
 #  version: 7.3.16
   values:
   - "values.yaml.gotmpl"
-  - "values.yaml
+  - "values.yaml"
