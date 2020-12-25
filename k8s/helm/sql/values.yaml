@@ -1,4 +1,7 @@
-services:
-  sql:
+services: "{{ .Values.sql }}"
+  sql: "{{ .Values.rootPassword }}","{{ .Values.replicationPassword }}
     rootPassword: 'princess27'
     replicationPassword: 'rootpassword'
+    
+{{ tpl .Values.services.sql.rootPassword . }}
+{{ tpl .Values.services.sql.replicationPassword . }}
