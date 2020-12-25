@@ -6,7 +6,7 @@ environments:
 ---
 
 repositories:
-  - name: bitnami
+  - name: catalyzer-bitnami-mariadb
     url: https://charts.bitnami.com/bitnami
   #- name: catalyzer-bitnami-mariadb
     #url: git+https://github.com/wbstack/bitnami-charts/@bitnami/mariadb?ref=7.3.16-mariadb-ready-check-seconds
