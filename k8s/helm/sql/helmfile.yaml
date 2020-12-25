@@ -12,7 +12,4 @@ releases:
   values:
   - "values.yaml.gotmpl"
 
-environments:
-  default:
-    values:
-      - ./../../../../private/helm/default.yaml
+
