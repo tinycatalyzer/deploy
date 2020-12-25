@@ -11,10 +11,9 @@ releases:
 #  version: 7.3.16
   values:
   - "values.yaml.gotmpl"
-  
-services:
- sql:
-   rootPassword: 'princess27'
-   replicationPassword: 'rootpassword'
+  services:
+    sql:
+      rootPassword: 'princess27'
+      replicationPassword: 'rootpassword'
 
 
