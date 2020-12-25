@@ -10,5 +10,5 @@ releases:
   chart: catalyzer-bitnami-mariadb/mariadb
 #  version: 7.3.16
   values:
-  - "values.yaml.gotmpl"
   - "values.yaml"
+  - "values.yaml.gotmpl"
