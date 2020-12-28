@@ -8,4 +8,5 @@ releases:
   chart: jetstack/cert-manager
   version: v0.13.0
   values:
+  # create a values.yaml file in the directory to pass environment necessary variables
   - "./values.yaml"
