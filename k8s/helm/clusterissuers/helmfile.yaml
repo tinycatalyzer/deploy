@@ -8,5 +8,6 @@ releases:
 
 environments:
   default:
+#create a default.yaml file in this directory to pass environment variables through values.yaml.gotmpl
     values:
       - ./../../../../private/helm/default.yaml
