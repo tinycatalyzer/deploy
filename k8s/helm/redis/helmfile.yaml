@@ -13,4 +13,4 @@ releases:
 environments:
   default:
     values:
-      - ./../../../../private/helm/default.yaml
+      - ./values.yaml
