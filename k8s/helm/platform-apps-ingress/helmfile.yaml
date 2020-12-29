@@ -1,6 +1,6 @@
 releases:
 - name: platform-apps-ingress
   namespace: default
-  chart: ./../../../charts/wbstack-opencura-ingress
+  chart: ./../../../charts/catalyzer-ingress
   values:
     - "values.yaml"
